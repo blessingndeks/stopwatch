@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(25deg, #f181aa, #d36c76 50%);
+    background: linear-gradient(50deg, #f181aa, #106ac5 50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    background: #eee9e9;
+    background: #b0afb0;
     border-radius: 16px;
     padding: 20px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
@@ -31,7 +31,7 @@ body {
 
 .timer {
     font-size: 40px;
-    background: white;
+    background: rgb(251, 206, 206);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
@@ -56,14 +56,15 @@ body {
 
 .controls {
     display: flex;
-    gap: 1rem;
+    gap: 2.5rem;
 }
 
 button {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
-    background: #f25191;
+    background: #0f5472;
     color: #ffffff;
+    font-weight: bold;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -71,7 +72,7 @@ button {
 }
 
 button:hover {
-    background: #d72a76;
+    background: #f082b2;
 }
 
 .lap-title {
@@ -88,7 +89,7 @@ ul {
     margin: 0;
     overflow-y: auto;
     max-height: 200px;
-    background: white;
+    background: rgb(133, 172, 219);
     border-radius: 8px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
@@ -104,4 +105,28 @@ li:last-child {
 
 .li span {
     font-weight: 700;
+}
+
+.attribution {
+    margin-top: 40px;
+    margin-left: 250px;
+    font-size: 0.8rem;
+    color: #460ad4;
+    font-weight: 900;
+}
+
+@media (max-width: 600px) {
+    .timer {
+        font-size: 30px;
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
 }
